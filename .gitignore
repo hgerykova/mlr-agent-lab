@@ -1,0 +1,40 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Virtualenvs and uv artifacts we do not want tracked
+.venv/
+venv/
+
+# Secrets and local config — never commit (this repo is public)
+.env
+.env.*
+*.key
+*.pem
+*.pfx
+*.p12
+credentials.json
+service-account*.json
+.netrc
+
+# Notebooks
+.ipynb_checkpoints/
+
+# ML run artifacts: large, private, or both
+data/
+wandb/
+runs/
+lightning_logs/
+outputs/
+checkpoints/
+*.ckpt
+*.pt
+*.pth
+*.safetensors
+*.h5
+*.npy
+*.npz
